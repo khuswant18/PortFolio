@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+  color: #000000;
+  font-family:'poppins',sans-serif;
+}
+
+.header-container {
+  position: fixed;
+  flex-wrap: wrap;
+  top: 0;
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.nav-logo {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.logo-name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: #000000;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+  padding: 0 10px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #18f08b;
+  bottom: -10px;
+  left: 0;
+  transition: 0.3s;
+
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+
+}
+.bg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(253, 251, 251, 0.904)
+    radial-gradient(rgba(2, 170, 226, 0.712) 10%, transparent 10.1%);
+  background-size: 11px 11px; 
+  z-index: -1;
+
+}
+
+.Hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero-container {
+  width: 100%;
+  display: flex;  
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 10rem;
+  gap: 1.2rem;
+}
+
+.image-container {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  object-position: top;
+  border-radius: 3rem;
+  object-fit: cover;
+
+}
+
+.blob {
+  position: relative;
+  width: 24rem;
+  height: 24rem;
+  overflow: hidden;
+  border: 0.5rem solid rgb(93, 169, 227);
+  border-radius: 50%;
+  background: rgb(138, 66, 66);
+  background-size: 500% 100%;
+  
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 0.7rem;
+}
+
+.greet {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.greet-gif {
+  height: 34px;
+  width: 34px;
+}
+
+.text_greet {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.text_name {
+  font-size: 2.9rem;
+}
+
+.name {
+  color: rgb(93, 169, 227);
+}
+
+.role-cv {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.text-role {
+  width: fit-content;
+  color: #5a43cb;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0.7rem;
+  background-color:#e4e1f0;
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 10px #bfbbd1 ;
+  font-weight: 500;
+  font-family:"Archivo", sans-serif;
+
+}
+
+button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #111213;
+  color: #ffffff;
+  font-weight: Bold;
+  font-size: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #49494a;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.08);
+}
+
+button:active {
+  background-color: #080a0b;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+
+.socials {
+  position: fixed;
+  top: 33%;
+  left: 0%;
+}   
+
+.socialContainer {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* youtube*/
+.containerTwo:hover {
+  background-color: #ff0000;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* github*/
+.containerFour:hover {
+  background-color: #24262a;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
