@@ -12,7 +12,6 @@ html,body {
   font-family:'poppins',sans-serif;
 }
 
-
 .header-container {
   position: fixed;
   top: 20px;
@@ -100,8 +99,7 @@ html,body {
 
 .logo-name:hover {
   color: #4a90e2;
-}
-
+}  
 
 .main-container {
   margin: 0 auto;
@@ -127,23 +125,36 @@ html,body {
   width: 100%;
   display: flex; 
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0rem 10rem;
-  gap: 1.2rem;
   
 }
 
 .image-container {
-  width: 50%;
+  width: 80%;
   position: relative;
   display: flex;
   justify-content: center;
+  animation: slidefromtop 1.6s ease forwards;
 }
+
+@keyframes slidefromtop {
+  0% {
+    opacity: 0;
+    transform: translateZ(-100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+
 
 .image-container img {
   width: 100%;
-  height: 600px;
+  height: 800px;
   position: absolute;
   object-position: top;
   border-radius: 3rem;
@@ -153,8 +164,8 @@ html,body {
 
 .blob {
   position: relative;
-  width: 24rem;
-  height: 24rem;
+  width:35rem;
+  height: 35rem;
   overflow: hidden;
   border: 0.5rem solid rgb(93, 169, 227);
   border-radius: 50%;
@@ -166,8 +177,35 @@ html,body {
 .main-text {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
+  gap: 1.6rem;
+  animation: slidefromleft 1.6s ease forwards;
+
+}
+
+@keyframes slidefromleft {
+  0% {
+    opacity: 0;
+    transform: translateX(+100%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+.name-greet {
+  display: flex;
+  flex-direction: column;
   gap: 0.7rem;
+}
+
+.desc-button {
+  display: flex;
+  flex-direction: column;
+  color: rgb(75 85 99);
+  gap: 1.8rem;
 }
 
 .greet {
@@ -189,6 +227,12 @@ html,body {
 
 .text_name {
   font-size: 2.9rem;
+}
+
+.about {
+  font-size: 1.2rem;
+  font-weight: 500;
+
 }
 
 .name {
@@ -214,31 +258,34 @@ html,body {
 
 }
 
-button {
+.download-btn {
+  display: inline-block;
   padding: 12.5px 30px;
-  border: 0;
+  border: none;
   border-radius: 10px;
   background-color: #111213;
   color: #ffffff;
-  font-weight: Bold;
+  font-weight: bold;
   font-size: 1rem;
-  -webkit-transition: all 0.5s;
+  text-decoration: none;
+  text-align: center;
   transition: all 0.5s;
 }
 
-button:hover {
+.download-btn:hover {
   background-color: #49494a;
   box-shadow: 0 0 20px #6fc5ff50;
   transform: scale(1.08);
+  cursor: pointer;
 }
 
-button:active {
+.download-btn:active {
   background-color: #080a0b;
-  -webkit-transition: all 0.25s;
   transition: all 0.25s;
   box-shadow: none;
   transform: scale(0.98);
 }
+
 
 
 .socials {
@@ -484,7 +531,7 @@ button:active {
 .project-img {
   margin: 2rem 0rem;
   max-width: 100%;
-  height: 310px;
+  height: 360px;
   display: block; 
 } 
 
@@ -506,24 +553,105 @@ a {
   text-decoration: none;
 }
 
-#Qualification {
-  padding-top: 5rem;
+
+#qualification {
+  width: 100%;
   min-height: 100vh;
-  width: 100%;
   margin: 0 auto;
-
-}
-
-.Qualification-container {
-  width: 100%;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
 }
- 
 
 
+.qualification-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.qualification-heading {
+  padding: 12px 44px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #0a192f;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-bottom:4rem;
+}
+
+.timeline {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #4a90e2;
+  top: 0;
+  bottom: 0;
+  left: 49.5%;
+  transform: translateX(-50%);
+}
+
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: #4a90e2;
+  border-radius: 50%;
+  position: absolute;
+  left: 49.3%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+
+.left {
+  justify-content: flex-start;
+  text-align: right;
+  padding-right: 5rem;
+
+}
+
+.right {
+  justify-content: flex-end;
+  text-align: left;
+  padding-left: 5rem;
+}
+
+
+.content {
+  max-width: 40%;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid  #4a90e2;
+}
+
+
+Footer {
+  padding: 1rem;
+  text-align: center;
+}
 
 
 
