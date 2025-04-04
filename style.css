@@ -456,27 +456,17 @@ button:active {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
-
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   overflow: hidden;
   gap: 5rem;
+  padding-bottom: 4rem;
 
-}
-
-.Project-display-1{
-  display: flex;
-  flex-direction: column;
-}
-
-.Project-display-1{
-  display: flex;
-  flex-direction: column;
 }
 
 .project { 
-  height: 100%;
+  height: 100%; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
@@ -497,8 +487,8 @@ button:active {
   margin: 2rem 0rem;
   max-width: 100%;
   height: 310px;
-  display: block;
-}
+  display: block; 
+} 
 
 .Project-description {
   font-size: 18px;
