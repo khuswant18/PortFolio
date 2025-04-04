@@ -104,14 +104,12 @@ html,body {
 
 
 .main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
   margin: 0 auto;
   align-items: center;
 
 }
+
+
 
 .Hero-wrapper {
   width: 100vw;
@@ -337,8 +335,8 @@ button:active {
 }
 
 .skills-container {
+  height: 100%;
   text-align: center;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,8 +357,6 @@ button:active {
   margin-bottom: 20px;
   margin-bottom:4rem;
 }
-
-
 
 .skills-description {
   font-size: 18px;
@@ -420,27 +416,28 @@ button:active {
   margin-top: 5px;
 }
 
-
-#Project {
+#Projects {
+  padding: 7rem 0rem;
+  margin-top: 4rem;
   width: 100%;
   min-height: 100vh;
+  margin: 0 auto; 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-}
+} 
 
 .Project-container {
-  text-align: center;
   margin-top: 50px;
-  width: 100%;
+  height: fit-content;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
-
+  gap: 2rem; 
 
 }
+
 
 .Project-heading { 
   padding: 12px 44px;
@@ -457,16 +454,19 @@ button:active {
 
 .Project-Cards {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   gap: 5rem;
   flex-wrap: wrap;
+  padding-bottom: 4rem;
 
 }
 
 .project { 
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
@@ -486,10 +486,43 @@ button:active {
 .project-img {
   margin: 2rem 0rem;
   max-width: 100%;
-  height: 300px;
+  height: 310px;
   display: block;
 }
 
+.Project-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 30px auto;
+  line-height: 1.6;
+
+}
+
+.git-button {
+  color: orange;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+#Qualification {
+  padding-top: 5rem;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.Qualification-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
 
 
 
