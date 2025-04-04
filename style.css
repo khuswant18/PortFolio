@@ -460,7 +460,7 @@ button:active {
   align-items: center;
   overflow: hidden;
   gap: 5rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding-bottom: 4rem;
 
 }
