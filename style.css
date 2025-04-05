@@ -154,7 +154,7 @@ html,body {
 
 .image-container img {
   width: 100%;
-  height: 800px;
+  height: 700px;
   position: absolute;
   object-position: top;
   border-radius: 3rem;
@@ -164,8 +164,8 @@ html,body {
 
 .blob {
   position: relative;
-  width:35rem;
-  height: 35rem;
+  width:28rem;
+  height: 28rem;
   overflow: hidden;
   border: 0.5rem solid rgb(93, 169, 227);
   border-radius: 50%;
