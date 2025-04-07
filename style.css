@@ -48,7 +48,7 @@ html,body {
 }
 
 .nav-logo .main-logo:hover {
-  transform: scale(1.1); 
+  transform: scale(0.8); 
   filter: drop-shadow(0 0 10px rgba(74, 144, 226, 0.5));
 }
 
