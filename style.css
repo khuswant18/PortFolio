@@ -17,7 +17,7 @@ html,body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%); 
-  width: 85%;
+  width: 85%; 
   background: rgba(255, 255, 255, 0.6); 
   backdrop-filter: blur(1px); 
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2); 
@@ -101,13 +101,18 @@ html,body {
   color: #4a90e2;
 }  
 
+@media (max-width:976px) {
+  .logo-name , .nav-logo {
+    display: none;
+  }
+}
+
+
 .main-container {
   margin: 0 auto;
   align-items: center;
 
 }
-
-
 
 .Hero-wrapper {
   width: 100vw;
@@ -130,6 +135,7 @@ html,body {
   margin: 0rem 10rem;
   
 }
+
 
 .image-container {
   width: 80%;
@@ -286,8 +292,6 @@ html,body {
   transform: scale(0.98);
 }
 
-
-
 .socials {
   position: fixed;
   top: 33%;
@@ -356,6 +360,41 @@ html,body {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (max-width: 1338px) {
+  .Hero-container {
+    gap: 2rem;
+    margin: 0rem 4rem;
+  }
+}
+
+@media (max-width:1157px) {
+  
+  .Hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0rem 4rem;
+  }
+
+  .blob {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .greet {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-text {
+    text-align: center;
+  }
+
+  .role-cv {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -463,6 +502,39 @@ html,body {
   margin-top: 5px;
 }
 
+@media (max-width:1145px) {
+  .buttons {
+    max-width: 900px;
+  }
+
+  .Button-1 {
+    max-width: 700px;
+  }
+
+  .Button-2 {
+    max-width: 700px;
+  }
+}
+
+@media (max-width:832px) {
+  .buttons {
+    max-width: 700px;
+  }
+}
+
+@media (max-width:811px) {
+  .buttons {
+    max-width: 600px;
+  }
+}
+
+@media (max-width:680px) {
+  .skills-description {
+    max-width: 400px;
+  }
+}
+ 
+
 #Projects {
   padding: 7rem 0rem;
   margin-top: 4rem;
@@ -512,7 +584,7 @@ html,body {
 }
 
 .project { 
-  height: 100%; 
+  width: 580px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   backdrop-filter: blur(10px);
@@ -529,10 +601,11 @@ html,body {
   
 
 .project-img {
+  height: 100%;
+  width: 100%; 
+  object-fit: cover;
   margin: 2rem 0rem;
-  max-width: 100%;
   height: 300px;
-  display: block; 
 } 
 
 .Project-description {
@@ -553,6 +626,55 @@ a {
   text-decoration: none;
 }
 
+@media (max-width:1424px) {
+  .Project-Cards {
+    max-width: 1250px;
+  }
+
+}
+
+@media (max-width:1376px) {
+  .Project-Cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 1900px;
+  }
+
+  .project {
+    width: 1000px;
+  }
+
+  .project-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+}
+
+@media (max-width:1162px) {
+  .project {
+    width: 800px;
+  }
+
+
+}
+
+@media (max-width:932px) {
+  .project {
+    width: 600px;
+  }
+
+
+}
+
+@media (max-width:746px) {
+  .project {
+    width: 500px;
+  }
+
+}
 
 #qualification {
   width: 100%;
@@ -599,9 +721,8 @@ a {
   gap: 2rem;
 }
 
-
-
-.college-image {
+.college-image { 
+    width: 100%;
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 12px;
@@ -617,12 +738,13 @@ a {
 
 }
 .college-image img{
-  max-width: 100%;
-  max-height: 20rem;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 .college-info {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -636,6 +758,7 @@ a {
 }
 
 .school-image {
+    width: 100%;
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 12px;
@@ -651,13 +774,13 @@ a {
 }
 
 .school-image img{
-  max-width: 100%;
-  max-height:19.5rem;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 .school-info {
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -666,10 +789,26 @@ a {
 }
 
 
+@media (max-width:1262px) {
+  .college-container , .school-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .school-info {
+    align-items: center;
+  }
+
+
+}
+
 Footer {
   padding-top: 6rem;
   text-align: center;
 }
+
+
 
 
 
