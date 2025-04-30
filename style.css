@@ -107,6 +107,12 @@ html,body {
   }
 }
 
+@media (max-width:628px) {
+  .header-container {
+    display: none;
+  }
+}
+
 
 .main-container {
   margin: 0 auto;
