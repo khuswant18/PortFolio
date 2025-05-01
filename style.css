@@ -107,11 +107,13 @@ html,body {
   }
 }
 
-@media (max-width:628px) {
+@media (max-width:768px) {
   .header-container {
     display: none;
   }
 }
+
+
 
 
 .main-container {
@@ -402,6 +404,44 @@ html,body {
     display: flex;
     justify-content: center;
   }
+
+  .image-container img {
+    height: 500px;
+  }
+}
+
+@media (max-width:510px) {
+  .Hero-container {
+    margin-top: 2rem;
+  }
+
+  .blob {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
+@media (max-width:320px) {
+
+  .blob {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .greet {
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .main-text {
+    text-align: center;
+  }
+
+  .role-cv {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 
@@ -538,7 +578,9 @@ html,body {
   .skills-description {
     max-width: 400px;
   }
-}
+} 
+
+
  
 
 #Projects {
@@ -559,7 +601,7 @@ html,body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem; 
+  gap: 2rem;  
 
 }
 
@@ -680,6 +722,13 @@ a {
     width: 500px;
   }
 
+
+}
+
+@media (max-width:320px) {
+  .project {
+    width: 300px;
+  } 
 }
 
 #qualification {
@@ -807,6 +856,12 @@ a {
   }
 
 
+}
+
+@media (max-width:320px) {
+  .qualification-heading {
+    font-size: 28px; 
+  }
 }
 
 Footer {
