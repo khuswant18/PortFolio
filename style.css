@@ -505,38 +505,41 @@ html,body {
 }
 
 
+/* ===== SKILLS SECTION ===== */
+
 #Skills {
-  padding: 7rem;
-  width: 100vw;
+  padding: 7rem 2rem;
+  width: 100%;
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .skills-container {
-  height: 100%;
+  width: 100%;
+  max-width: 800px; /* Reduced size */
+  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  box-sizing: border-box;
 }
-
 
 .skills-heading {
   padding: 12px 44px;
-  font-size: 48px;
-  max-width: 200px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #0a192f;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 .skills-description {
@@ -551,20 +554,21 @@ html,body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 2rem;
 }
 
-.Button-1, .Button-2 {
+.Button-1,
+.Button-2 {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .toggle {
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 120px; /* Slightly smaller */
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -585,29 +589,56 @@ html,body {
 }
 
 .toggle img {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .toggle p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: black;
   margin-top: 5px;
 }
 
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 1.8rem;
+    padding: 10px 30px;
+  }
+
+  .skills-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .toggle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .toggle img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle p {
+    font-size: 12px;
+  }
+}
+
+
 
 #Projects {
   padding: 7rem 3rem;
-  margin-top: 4rem;
   width: 100%;
   min-height: 100vh;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .Project-container {
   margin-top: 50px;
@@ -616,12 +647,10 @@ html,body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;  
-
+  gap: 2rem;
 }
 
-
-.Project-heading { 
+.Project-heading {
   padding: 12px 44px;
   font-size: 48px;
   font-weight: 700;
@@ -629,87 +658,113 @@ html,body {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  margin-bottom:4rem;
-
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 .Project-Cards {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 5rem;
   padding-bottom: 4rem;
-
 }
 
-.project { 
-  width: 580px;
+.project {
+  width: 100%;
+  max-width: 580px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 10px 10px 10px rgba(0, 153, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 10px; 
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   transition: all 0.3s ease, box-shadow 0.3s ease;
-} 
+  box-sizing: border-box;
+}
 
 .project:hover {
-  transform: scale(1.1);
-}   
-
-  
+  transform: scale(1.05);
+}
 
 .project-img {
-  height: 100%;
-  width: 100%; 
-  object-fit: cover;
-  margin: 2rem 0rem;
+  width: 100%;
   height: 300px;
-} 
+  object-fit: cover;
+  margin: 2rem 0;
+  border-radius: 12px;
+}
 
 .Project-description {
   font-size: 18px;
   color: #555;
   max-width: 600px;
-  margin: 10px auto 30px auto;
+  margin: 10px auto 20px auto;
   line-height: 1.6;
-
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .git-button {
   color: orange;
   font-weight: 700;
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 a {
   text-decoration: none;
 }
 
-@media (max-width:747px) {
+/* ---------- Responsive Styles ---------- */
+
+@media (max-width: 768px) {
   .Project-Cards {
-    padding: 2rem;
-    gap: 0;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .project {
-      background:none;
-      border-radius: 0;
-      backdrop-filter: none;
-      box-shadow:none; 
+    background: none;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 0;
   }
 
   .project-img {
-    height: auto;
+    max-height: 200px;
+    margin: 1rem 0;
+  }
+
+  .Project-heading {
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+
+  .Project-description {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-img {
+    max-height: 180px;
   }
 
   .Project-description {
     font-size: 0.8rem;
   }
 }
+
+
+
 
 
 #qualification {
